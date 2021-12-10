@@ -13,5 +13,5 @@ class HomePage(MethodView):
 
 app.add_url_rule("/", view_func=HomePage.as_view('home_page'))
 
-
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
